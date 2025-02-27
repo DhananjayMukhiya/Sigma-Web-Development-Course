@@ -1,0 +1,58 @@
+/* css selecters */
+/* element selecters */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    background-color: red;
+}
+
+/* class selecters */
+.myclass {
+    background-color: aqua;
+}
+
+/* id selecters */
+#myid {
+    background-color: darkgoldenrod;
+}
+
+/* child selecters */
+div > p {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 128);
+}
+
+/* Descendant Selecters */
+div p {
+    background-color: green;
+}
+
+/* Univertional Selecters */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+/* pseudo selecters */
+a:visited{
+    color: rgb(255, 0, 0);
+}
+
+a:link{
+    color: rgb(17, 255, 0);
+}
+
+a:active{
+    background-color: black;
+}
+
+a:hover{
+    background-color: yellow;
+}

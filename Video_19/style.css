@@ -1,0 +1,34 @@
+h1 {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: "Poppins", serif;
+}
+
+h2 {
+    text-transform: lowercase;
+    text-decoration: underline;
+    text-decoration-color: brown;
+    /* text-decoration-style: dashed; */
+    text-decoration-thickness: 10px;
+    /* text-indent: 50px; */
+    text-align: center;
+}
+
+p {
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-style: italic;
+    font-weight: bold;
+    text-decoration: underline; */
+    font-family: "Baloo Bhaijaan 2", serif;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.para {
+    border: 2px solid red;
+    width: 145px;
+    word-break: break-all;
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+    
+}
