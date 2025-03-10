@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: #dab785;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        /*Navbar Style*/
+        header {
+            position: sticky;
+            top: 0;
+        }
+        nav {
+            background-color: #0b3954;
+            padding: 15px 0;
+        }
+
+        ul li {
+            display: inline;
+            padding: 25px;
+        }
+
+        ul li a {
+            color: #eae6e5;
+            text-decoration: none;
+        }
+
+        /* contant style */
+        .boxes {
+            height: 100%;
+            width: 100%;
+            background-color: #d5896f;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .box1 {
+            height: 500px;
+            width: 500px;
+            background-color: #da2c38;
+            display: inline-block;
+            margin-right: 50px;
+        }
+
+        .box2 {
+            height: 500px;
+            width: 500px;
+            background-color: #da2c38;
+            display: inline-block;
+            margin-left: 50px;
+
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50px;
+            text-align: center;
+            position: fixed;
+            bottom: 12px;
+            right: 24px;
+
+        }
+
+        .text {
+            width: 90vw;
+            height: 20vh;
+            background-color: #574200;
+            color: white;
+            margin: 5vh 5vw;
+            text-align: center;
+            font-size: larger;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: white;
+            height: 10vh;
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="box1">
+                Box1
+            </div>
+            <div class="box2">
+                box2
+            </div>
+            <div class="circle">
+                logo
+            </div>
+        </div>
+        <div class="text">
+            welcome to sigma web dev course.
+        </div>
+    </main>
+    <footer>
+        All rights reserved || &copy;2025
+    </footer>
+</body>
+
+</html>

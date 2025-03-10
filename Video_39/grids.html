@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - 2nd example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        .container {
+            height: 100%;
+            width: 100%;
+            background-color: #ffecd1;
+            border: 2px solid rgb(255, 255, 255);
+            padding: 2rem;
+            display: grid;
+            gap: 0.4rem;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            /* justify-items: center;
+            align-items: center; */
+            place-items: center;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            border: 2px solid rgb(23, 23, 23);
+            color: white;
+            /* justify-self: end; */
+            /* justify-self: stretch; */
+            /* align-self: end; */
+            /* place-self: center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: #001524;" class="item header">Header</div>
+        <div style="background-color: #15616d;" class="item sidebar">Sidebar</div>
+        <div style="background-color: #ff7d00;" class="item contant-1">Content1</div>
+        <div style="background-color: #78290f;" class="item footer">Footer</div>
+        <div style="background-color: #001524;" class="item header">Header</div>
+        <div style="background-color: #15616d;" class="item sidebar">Sidebar</div>
+        <div style="background-color: #ff7d00;" class="item contant-1">Content1</div>
+        <div style="background-color: #78290f;" class="item footer">Footer</div>
+        <div style="background-color: #001524;" class="item header">Header</div>
+        <div style="background-color: #15616d;" class="item sidebar">Sidebar</div>
+        <div style="background-color: #ff7d00;" class="item contant-1">Content1</div>
+        <div style="background-color: #78290f;" class="item footer">Footer</div>
+    </div>
+</body>
+</html>

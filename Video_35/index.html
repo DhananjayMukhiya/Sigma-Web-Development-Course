@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selecters</title>
+    <style>
+        /* .box:first-child{
+            background-color: aqua;
+        }
+        .box::first-line{
+            color: red;
+        }
+        .boxes * {
+            text-decoration: underline;
+            border: 2px solid black;
+        }
+        [data-color="primary"] {
+            margin-top: 50px;
+        /* }
+         .box:nth-child(odd){
+            background-color: blue;
+         }
+         .box:nth-last-child(1){
+            background-color: red;
+         } */
+          .boxes::before{
+            content: "Dhananjay si Good";
+            color: darkorange;
+          }
+          .boxes::after{
+            content: "Dhananjay is Good";
+            color: rgb(0, 122, 236);
+          }
+          ::selection{
+            color:indianred;
+            background-color: indigo;
+          }
+          .box::first-letter{
+            color: orangered;
+            font-size: 50px;
+          }
+          input::placeholder{
+            color: blue;
+          }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia inventore accusamus sequi hic repudiandae repellat voluptatibus rem iusto eaque similique saepe animi doloremque, esse ex! Sapiente rerum nobis consectetur assumenda tenetur officia odit cupiditate.</div>
+        <div class="box">hey i am a box</div>
+        <div class="box">hey i am a box</div>
+        <div data-color="primary" class="box">hey i am a box</div>
+        <input type="text" placeholder="Enter Your Name">
+    </div>
+</body>
+</html>

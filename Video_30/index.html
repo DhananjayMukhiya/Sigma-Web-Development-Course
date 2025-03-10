@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Veriable</title>
+    <style>
+        :root{
+            --color: blue;
+            --secColor: rgb(103, 255, 240);
+            --defPad: 5px;
+            --defOp: 0.5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* div:first-child {
+            background-color: chocolate;
+        } */
+
+        .nav {
+            background-color: var(--color);
+            color: white;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            opacity: var(--defOp);
+            list-style: none;
+            padding: var(--defPad);
+            border: 3px solid var(--secColor);
+        }
+
+        ul li:first-child {
+            --color: rgb(173, 0, 242);
+            background-color: var(--color, blue);
+        }
+
+        .container {
+            background-color: var(--secColor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Container</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime voluptas sint dolore tempora soluta quia natus nostrum totam voluptates sequi. Modi esse expedita voluptate amet. Corrupti ex vero, atque corporis minima, ipsam quo nam deserunt cumque expedita tenetur accusantium sit veritatis veniam, repellat dolor ea?
+    </div>
+</body>
+</html>

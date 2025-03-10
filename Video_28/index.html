@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Positions Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 80vw;
+            height: 400px;
+            padding: 3px;
+            margin: 3px;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: #2274a5;
+            position: sticky;
+            top: 0px;
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+        }
+
+        .box2 {
+            background-color: #f75c03;
+            /* position: relative;
+            top: 20px;
+            left: 20px;
+            z-index: 1; */
+        }
+
+        .box3 {
+            background-color: #f1c40f;
+            /* position: static; /*by default*/
+            /* top: 10px; */ 
+            
+        }
+
+        .box4 {
+            background-color: #d90368;
+            /* position: fixed;
+            left: 50px;
+            } */}
+
+        .box5 {
+            background-color: #00cc66;
+            /* position: sticky;
+            top: 0px; */
+        }
+        .parents{
+            padding: 40px;
+            margin: 40px;
+            border: 2px solid purple;
+            /* transform, filter, or perspectives properties can also make an element appear as position  */
+            /* position: relative; */
+            /* transform: translate(0); */
+            /* filter: invert(0); */
+            perspective: 0em;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="parents">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+    </div>
 </body>
+
 </html>
