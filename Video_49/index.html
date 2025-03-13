@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #233d4d;
+        }
+        .box {
+            width: 200px;
+            height: 250px;
+            background-color: #fe7f2d;
+            margin: 10px;
+            border: 2px solid #fcca46;
+            background-image: url(DC\ Logo.jpg);
+            /* background-position: center center; */
+            /* background-size: contain;
+            background-repeat: no-repeat; */
+            background-size: cover;
+            background-position: center center;
+        }
+        /* img {
+            width: 200px;
+            height: 250px;
+            object-fit: contain; 
+            object-fit: cover; 
+            object-fit: fill; by default
+            object-position: center;
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <img src="DC Logo.jpg" alt=""> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0">
+    <title>Exercise - 8 Bounce Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        .parent-con {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            height: 80vh;
+            width: 90vw;
+            background-color: #233d4d;
+            position: relative; /* Relative positioning for container */
+            overflow: hidden;  /* Ensure the circle doesn't go outside */
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #fe7f2d;
+            border-radius: 50%;
+            border: 2px solid #fcca46;
+            position: absolute;
+
+            /* Animation: updated to stay within bounds */
+            animation: circle-move 5s linear infinite;
+        }
+        @keyframes circle-move {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: 0;
+                left: calc(100% - 100px); /* Circle stays within container */
+            }
+            50% {
+                top: calc(100% - 100px); /* Adjust to stay inside container */
+                left: calc(100% - 100px);
+            }
+            75% {
+                top: calc(100% - 100px);
+                left: 0;
+            }
+            100% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-con">
+        <div class="container">
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
